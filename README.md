@@ -1,0 +1,107 @@
+# Lista de Exercícios JS
+
+## Básico (1–30)
+- Exibir "Olá, mundo" no console
+- Declarar uma variável e imprimir seu valor
+- Somar dois números
+- Verificar se um número é par ou ímpar
+- Converter string para número
+- Calcular a média de 3 números
+- Criar um array e exibir seus valores
+- Acessar um elemento do array
+- Adicionar item ao array
+- Remover item do array
+- Criar um objeto simples
+- Acessar propriedade de objeto
+- Criar uma função simples
+- Função que soma dois números
+- Usar if/else para verificar idade
+- Usar switch para dias da semana
+- Loop for de 1 a 10
+- Loop while
+- Imprimir números pares de 1 a 20
+- Contar de 10 até 0
+- Criar função que retorna maior número
+- Verificar se uma string está vazia
+- Concatenar strings
+- Converter string para maiúsculo
+- Contar caracteres de uma string
+- Criar array com números e somar todos
+- Encontrar maior número em array
+- Encontrar menor número
+- Inverter array
+- Copiar array
+
+## Intermediário (31–70)
+- Filtrar números pares de um array
+- Usar map para dobrar valores
+- Usar reduce para somar array
+- Ordenar array crescente
+- Ordenar array decrescente
+- Remover duplicados de array
+- Verificar se valor existe no array
+- Encontrar índice de elemento
+- Criar função arrow
+- Função com parâmetro padrão
+- Desestruturar objeto
+- Desestruturar array
+- Usar spread operator
+- Clonar objeto
+- Merge de objetos
+- Converter objeto em array
+- Converter array em objeto
+- Criar função recursiva (fatorial)
+- Fibonacci
+- Verificar palíndromo
+- Contar vogais em string
+- Capitalizar primeira letra
+- Remover espaços extras
+- Contar palavras
+- Validar email simples
+- Gerar número aleatório
+- Criar jogo de adivinhação
+- Simular dado (1–6)
+- Criar timer com setTimeout
+- Usar setInterval
+- Parar interval
+- Manipular DOM (selecionar elemento)
+- Alterar texto HTML
+- Alterar estilo CSS via JS
+- Criar botão dinamicamente
+- Evento de clique
+- Evento de teclado
+- Criar formulário simples
+- Validar formulário
+- Mostrar alerta com dados do form
+
+## Avançado (71–100)
+- Trabalhar com Promises
+- Criar Promise manual
+- Usar async/await
+- Consumir API com fetch
+- Tratar erro com try/catch
+- Criar classe
+- Usar herança
+- Criar método estático
+- Encapsulamento com getters/setters
+- Criar módulo JS
+- Exportar/importar funções
+- Manipular JSON
+- Salvar dados no localStorage
+- Ler dados do localStorage
+- Criar To-Do List completa
+- Criar contador com persistência
+- Criar sistema de login fake
+- Criar debounce function
+- Criar throttle function
+- Criar função curry
+- Criar deep clone
+- Implementar busca binária
+- Ordenação (bubble sort)
+- Ordenação (quick sort)
+- Criar mini framework simples
+- Criar observer pattern
+- Criar event emitter
+- Criar sistema de rotas simples
+- Criar SPA básica
+- Criar app consumindo API real (ex: clima)
