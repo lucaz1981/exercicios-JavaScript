@@ -8,26 +8,21 @@ const nome = "Lucas";
 console.log(nome);
 
 // 3. Somar dois números
-function soma(a, b) {
-  return a + b;
-}
-console.log(soma(2, 3));
+console.log(2 + 3);
 
 // 4. Verificar se um número é par ou ímpar
-function parOuImpar(n) {
-  return n % 2 === 0 ? "par" : "ímpar";
+if (5 % 2 === 0) {
+  console.log("par");
+} else {
+  console.log("ímpar");
 }
-console.log(parOuImpar(5));
 
 // 5. Converter string para número
 const num = Number("42");
 console.log(num, typeof num);
 
 // 6. Calcular a média de 3 números
-function media(a, b, c) {
-  return (a + b + c) / 3;
-}
-console.log(media(5, 7, 9));
+console.log((5 + 7 + 9) / 3);
 
 // 7. Criar um array e exibir seus valores
 const arr = [1, 2, 3];
@@ -52,46 +47,46 @@ console.log(pessoa);
 console.log(pessoa.nome);
 
 // 13. Criar uma função simples
-function ola() {
-  console.log("Olá");
-}
-ola();
+console.log("Olá");
 
 // 14. Função que soma dois números
-function soma2(a, b) {
-  return a + b;
-}
-console.log(soma2(10, 15));
+console.log(10 + 15);
 
 // 15. Usar if/else para verificar idade
-function podeDirigir(idade) {
-  if (idade >= 18) return "pode";
-  else return "não pode";
+if (17 >= 18) {
+  console.log("pode");
+} else {
+  console.log("não pode");
 }
-console.log(podeDirigir(17));
 
 // 16. Usar switch para dias da semana
-function diaDaSemana(n) {
-  switch (n) {
-    case 1:
-      return "Dom";
-    case 2:
-      return "Seg";
-    case 3:
-      return "Ter";
-    case 4:
-      return "Qua";
-    case 5:
-      return "Qui";
-    case 6:
-      return "Sex";
-    case 7:
-      return "Sáb";
-    default:
-      return "Inválido";
-  }
+let dia;
+switch (3) {
+  case 1:
+    dia = "Dom";
+    break;
+  case 2:
+    dia = "Seg";
+    break;
+  case 3:
+    dia = "Ter";
+    break;
+  case 4:
+    dia = "Qua";
+    break;
+  case 5:
+    dia = "Qui";
+    break;
+  case 6:
+    dia = "Sex";
+    break;
+  case 7:
+    dia = "Sáb";
+    break;
+  default:
+    dia = "Inválido";
 }
-console.log(diaDaSemana(3));
+console.log(dia);
 
 // 17. Loop for de 1 a 10
 for (let i = 1; i <= 10; i++) console.log(i);
@@ -110,16 +105,18 @@ for (let n = 2; n <= 20; n += 2) console.log(n);
 for (let n = 10; n >= 0; n--) console.log(n);
 
 // 21. Criar função que retorna maior número
-function maior(a, b) {
-  return a > b ? a : b;
+if (3 > 7) {
+  console.log(3);
+} else {
+  console.log(7);
 }
-console.log(maior(3, 7));
 
 // 22. Verificar se uma string está vazia
-function vazia(s) {
-  return s.trim() === "";
+if ("  ".trim() === "") {
+  console.log(true);
+} else {
+  console.log(false);
 }
-console.log(vazia("  "));
 
 // 23. Concatenar strings
 const s = "oi" + " mundo";
@@ -316,7 +313,7 @@ const form = document.getElementById("f");
 // 69. Validar formulário
 form?.addEventListener("submit", e => {
   e.preventDefault();
-  const v = (document.getElementById("i") as HTMLInputElement).value;
+  const v = document.getElementById("i").value;
   if (!v) alert("Obrigatório");
 });
 
