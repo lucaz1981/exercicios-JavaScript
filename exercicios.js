@@ -1,62 +1,62 @@
 // Lista de exemplos JavaScript para cada exercício
 
 // 1. Exibir "Olá, mundo" no console
-console.log("Olá, mundo");
+alert("Olá, mundo");
 
 // 2. Declarar uma variável e imprimir seu valor
 const nome = "Lucas";
-console.log(nome);
+alert(nome);
 
 // 3. Somar dois números
-console.log(2 + 3);
+alert(2 + 3);
 
 // 4. Verificar se um número é par ou ímpar
 if (5 % 2 === 0) {
-  console.log("par");
+  alert("par");
 } else {
-  console.log("ímpar");
+  alert("ímpar");
 }
 
 // 5. Converter string para número
 const num = Number("42");
-console.log(num, typeof num);
+alert(num, typeof num);
 
 // 6. Calcular a média de 3 números
-console.log((5 + 7 + 9) / 3);
+alert((5 + 7 + 9) / 3);
 
 // 7. Criar um array e exibir seus valores
 const arr = [1, 2, 3];
-console.log(arr);
+alert(arr);
 
 // 8. Acessar um elemento do array
-console.log(arr[1]);
+alert(arr[1]);
 
 // 9. Adicionar item ao array
 arr.push(4);
-console.log(arr);
+alert(arr);
 
 // 10. Remover item do array
 arr.pop();
-console.log(arr);
+alert(arr);
 
 // 11. Criar um objeto simples
 const pessoa = { nome: "Ana", idade: 25 };
-console.log(pessoa);
+alert(pessoa);
 
 // 12. Acessar propriedade de objeto
-console.log(pessoa.nome);
+alert(pessoa.nome);
 
 // 13. Criar uma função simples
-console.log("Olá");
+alert("Olá");
 
 // 14. Função que soma dois números
-console.log(10 + 15);
+alert(10 + 15);
 
 // 15. Usar if/else para verificar idade
 if (17 >= 18) {
-  console.log("pode");
+  alert("pode");
 } else {
-  console.log("não pode");
+  alert("não pode");
 }
 
 // 16. Usar switch para dias da semana
@@ -86,198 +86,198 @@ switch (3) {
   default:
     dia = "Inválido";
 }
-console.log(dia);
+alert(dia);
 
 // 17. Loop for de 1 a 10
-for (let i = 1; i <= 10; i++) console.log(i);
+for (let i = 1; i <= 10; i++) alert(i);
 
 // 18. Loop while
 let j = 1;
 while (j <= 5) {
-  console.log(j);
+  alert(j);
   j++;
 }
 
 // 19. Imprimir números pares de 1 a 20
-for (let n = 2; n <= 20; n += 2) console.log(n);
+for (let n = 2; n <= 20; n += 2) alert(n);
 
 // 20. Contar de 10 até 0
-for (let n = 10; n >= 0; n--) console.log(n);
+for (let n = 10; n >= 0; n--) alert(n);
 
 // 21. Criar função que retorna maior número
 if (3 > 7) {
-  console.log(3);
+  alert(3);
 } else {
-  console.log(7);
+  alert(7);
 }
 
 // 22. Verificar se uma string está vazia
 if ("  ".trim() === "") {
-  console.log(true);
+  alert(true);
 } else {
-  console.log(false);
+  alert(false);
 }
 
 // 23. Concatenar strings
 const s = "oi" + " mundo";
-console.log(s);
+alert(s);
 
 // 24. Converter string para maiúsculo
-console.log("abc".toUpperCase());
+alert("abc".toUpperCase());
 
 // 25. Contar caracteres de uma string
-console.log("JavaScript".length);
+alert("JavaScript".length);
 
 // 26. Criar array com números e somar todos
 const nums = [1, 2, 3, 4];
-console.log(nums.reduce((a, b) => a + b, 0));
+alert(nums.reduce((a, b) => a + b, 0));
 
 // 27. Encontrar maior número em array
-console.log(Math.max(...nums));
+alert(Math.max(...nums));
 
 // 28. Encontrar menor número
-console.log(Math.min(...nums));
+alert(Math.min(...nums));
 
 // 29. Inverter array
-console.log([...nums].reverse());
+alert([...nums].reverse());
 
 // 30. Copiar array
 const copia = [...nums];
-console.log(copia);
+alert(copia);
 
 // 31. Filtrar números pares de um array
-console.log(nums.filter(x => x % 2 === 0));
+alert(nums.filter(x => x % 2 === 0));
 
 // 32. Usar map para dobrar valores
-console.log(nums.map(x => x * 2));
+alert(nums.map(x => x * 2));
 
 // 33. Usar reduce para somar array
-console.log(nums.reduce((a, b) => a + b, 0));
+alert(nums.reduce((a, b) => a + b, 0));
 
 // 34. Ordenar array crescente
 const desord = [4, 1, 3, 2];
-console.log([...desord].sort((a, b) => a - b));
+alert([...desord].sort((a, b) => a - b));
 
 // 35. Ordenar array decrescente
-console.log([...desord].sort((a, b) => b - a));
+alert([...desord].sort((a, b) => b - a));
 
 // 36. Remover duplicados de array
 const dup = [1, 2, 2, 3, 3];
-console.log([...new Set(dup)]);
+alert([...new Set(dup)]);
 
 // 37. Verificar se valor existe no array
-console.log(nums.includes(3));
+alert(nums.includes(3));
 
 // 38. Encontrar índice de elemento
-console.log(nums.indexOf(3));
+alert(nums.indexOf(3));
 
 // 39. Criar função arrow
 const dobrar = x => x * 2;
-console.log(dobrar(5));
+alert(dobrar(5));
 
 // 40. Função com parâmetro padrão
 function saudacao(nome = "Visitante") {
   return `Olá, ${nome}`;
 }
-console.log(saudacao());
+alert(saudacao());
 
 // 41. Desestruturar objeto
 const { nome: n, idade: idadePessoa } = pessoa;
-console.log(n, idadePessoa);
+alert(n, idadePessoa);
 
 // 42. Desestruturar array
 const [a, b] = nums;
-console.log(a, b);
+alert(a, b);
 
 // 43. Usar spread operator
 const arr2 = [...nums, 5];
-console.log(arr2);
+alert(arr2);
 
 // 44. Clonar objeto
 const p2 = { ...pessoa };
-console.log(p2);
+alert(p2);
 
 // 45. Merge de objetos
 const c = { ...pessoa, cidade: "SP" };
-console.log(c);
+alert(c);
 
 // 46. Converter objeto em array
 const entries = Object.entries(pessoa);
-console.log(entries);
+alert(entries);
 
 // 47. Converter array em objeto
 const objFromArr = Object.fromEntries([ ["x", 1], ["y", 2] ]);
-console.log(objFromArr);
+alert(objFromArr);
 
 // 48. Criar função recursiva (fatorial)
 function fatorial(n) {
   return n <= 1 ? 1 : n * fatorial(n - 1);
 }
-console.log(fatorial(5));
+alert(fatorial(5));
 
 // 49. Fibonacci
 function fib(n) {
   return n < 2 ? n : fib(n - 1) + fib(n - 2);
 }
-console.log(fib(6));
+alert(fib(6));
 
 // 50. Verificar palíndromo
 function palindromo(word) {
   const w = word.toLowerCase().replace(/\W/g, "");
   return w === w.split("").reverse().join("");
 }
-console.log(palindromo("arara"));
+alert(palindromo("arara"));
 
 // 51. Contar vogais em string
 function contarVogais(str) {
   return (str.match(/[aeiou]/gi) || []).length;
 }
-console.log(contarVogais("teste"));
+alert(contarVogais("teste"));
 
 // 52. Capitalizar primeira letra
 function capitalizar(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
-console.log(capitalizar("javascript"));
+alert(capitalizar("javascript"));
 
 // 53. Remover espaços extras
 function trimTodos(str) {
   return str.replace(/\s+/g, " ").trim();
 }
-console.log(trimTodos("  a   b  "));
+alert(trimTodos("  a   b  "));
 
 // 54. Contar palavras
 function contarPalavras(str) {
   return str.trim() === "" ? 0 : str.trim().split(/\s+/).length;
 }
-console.log(contarPalavras("um dois três"));
+alert(contarPalavras("um dois três"));
 
 // 55. Validar email simples
 function validaEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
-console.log(validaEmail("x@y.com"));
+alert(validaEmail("x@y.com"));
 
 // 56. Gerar número aleatório
-console.log(Math.floor(Math.random() * 100) + 1);
+alert(Math.floor(Math.random() * 100) + 1);
 
 // 57. Criar jogo de adivinhação
 function adivinhar(chute) {
   const alvo = 7;
   return chute === alvo ? "acertou" : "errou";
 }
-console.log(adivinhar(7));
+alert(adivinhar(7));
 
 // 58. Simular dado (1–6)
-console.log(Math.floor(Math.random() * 6) + 1);
+alert(Math.floor(Math.random() * 6) + 1);
 
 // 59. Criar timer com setTimeout
-setTimeout(() => console.log("timeout"), 500);
+setTimeout(() => alert("timeout"), 500);
 
 // 60. Usar setInterval
 let c2 = 0;
 const id = setInterval(() => {
-  console.log(c2++);
+  alert(c2++);
   if (c2 === 3) clearInterval(id);
 }, 100);
 
@@ -286,7 +286,7 @@ const id = setInterval(() => {
 
 // 62. Manipular DOM (selecionar elemento)
 const el = document.querySelector("body");
-console.log(el);
+alert(el);
 
 // 63. Alterar texto HTML
 if (el) el.textContent = "Olá DOM";
@@ -303,7 +303,7 @@ document.body?.appendChild(btn);
 btn.addEventListener("click", () => alert("clicou!"));
 
 // 67. Evento de teclado
-document.addEventListener("keydown", e => console.log("tecla", e.key));
+document.addEventListener("keydown", e => alert("tecla", e.key));
 
 // 68. Criar formulário simples
 // no HTML:
@@ -325,25 +325,25 @@ form?.addEventListener("submit", e => {
 
 // 71. Trabalhar com Promises
 const p = new Promise((res, rej) => setTimeout(() => res("ok"), 100));
-p.then(console.log);
+p.then(alert);
 
 // 72. Criar Promise manual
 function espera(ms) {
   return new Promise(res => setTimeout(res, ms));
 }
-espera(100).then(() => console.log("passou"));
+espera(100).then(() => alert("passou"));
 
 // 73. Usar async/await
 async function testeAsync() {
   await espera(10);
   return "feito";
 }
-testeAsync().then(console.log);
+testeAsync().then(alert);
 
 // 74. Consumir API com fetch
 fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then(r => r.json())
-  .then(console.log);
+  .then(alert);
 
 // 75. Tratar erro com try/catch
 async function rodar() {
@@ -362,7 +362,7 @@ class Animal {
   }
 
   falar() {
-    console.log(this.nome);
+    alert(this.nome);
   }
 }
 const a = new Animal("Rex");
@@ -371,7 +371,7 @@ a.falar();
 // 77. Usar herança
 class Cachorro extends Animal {
   latir() {
-    console.log("Au");
+    alert("Au");
   }
 }
 new Cachorro("Bolt").latir();
@@ -382,7 +382,7 @@ class MathUtils {
     return a + b;
   }
 }
-console.log(MathUtils.soma(3, 4));
+alert(MathUtils.soma(3, 4));
 
 // 79. Encapsulamento com getters/setters
 class PessoaEncapsulada {
@@ -400,25 +400,25 @@ class PessoaEncapsulada {
 }
 const p3 = new PessoaEncapsulada("João");
 p3.nome = "José";
-console.log(p3.nome);
+alert(p3.nome);
 
 // 80. Criar módulo JS
 // em modulo.js: export function add(a,b){ return a+b; }
-// em main.js: import {add} from './modulo.js'; console.log(add(2,2));
+// em main.js: import {add} from './modulo.js'; alert(add(2,2));
 
 // 81. Exportar/importar funções
 // Mesma explicação do item 80.
 
 // 82. Manipular JSON
 const json = JSON.stringify(pessoa);
-console.log(json);
-console.log(JSON.parse(json));
+alert(json);
+alert(JSON.parse(json));
 
 // 83. Salvar dados no localStorage
 localStorage.setItem("chave", "valor");
 
 // 84. Ler dados do localStorage
-console.log(localStorage.getItem("chave"));
+alert(localStorage.getItem("chave"));
 
 // 85. Criar To-Do List completa
 const tarefas = [];
@@ -429,19 +429,19 @@ function marcarFeito(i) {
   if (tarefas[i]) tarefas[i].feito = true;
 }
 adicionarTarefa("test");
-console.log(tarefas);
+alert(tarefas);
 
 // 86. Criar contador com persistência
 let cont = Number(localStorage.getItem("cont") || 0);
 cont++;
 localStorage.setItem("cont", String(cont));
-console.log(cont);
+alert(cont);
 
 // 87. Criar sistema de login fake
 function loginFake(user, pass) {
   return user === "admin" && pass === "123";
 }
-console.log(loginFake("admin", "123"));
+alert(loginFake("admin", "123"));
 
 // 88. Criar debounce function
 function debounce(fn, ms) {
@@ -471,13 +471,13 @@ function curry(fn) {
   };
 }
 const somaC = curry((a, b, c) => a + b + c);
-console.log(somaC(1)(2)(3));
+alert(somaC(1)(2)(3));
 
 // 91. Criar deep clone
 function deepClone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
-console.log(deepClone({ x: 1, y: { z: 2 } }));
+alert(deepClone({ x: 1, y: { z: 2 } }));
 
 // 92. Implementar busca binária
 function buscaBin(arr, x) {
@@ -491,7 +491,7 @@ function buscaBin(arr, x) {
   }
   return -1;
 }
-console.log(buscaBin([1, 3, 5, 7], 5));
+alert(buscaBin([1, 3, 5, 7], 5));
 
 // 93. Ordenação (bubble sort)
 function bubbleSort(arr) {
@@ -505,7 +505,7 @@ function bubbleSort(arr) {
   }
   return a;
 }
-console.log(bubbleSort([5, 1, 4, 2]));
+alert(bubbleSort([5, 1, 4, 2]));
 
 // 94. Ordenação (quick sort)
 function quickSort(arr) {
@@ -516,7 +516,7 @@ function quickSort(arr) {
   const right = arr.filter(x => x > pivot);
   return [...quickSort(left), ...equal, ...quickSort(right)];
 }
-console.log(quickSort([5, 1, 4, 2]));
+alert(quickSort([5, 1, 4, 2]));
 
 // 95. Criar mini framework simples
 class MiniFrame {
@@ -543,7 +543,7 @@ class Subject {
   }
 }
 const subject = new Subject();
-subject.subscribe(data => console.log("notified", data));
+subject.subscribe(data => alert("notified", data));
 subject.notify(1);
 
 // 97. Criar event emitter
@@ -559,12 +559,12 @@ class Emitter {
   }
 }
 const emitter = new Emitter();
-emitter.on("x", v => console.log(v));
+emitter.on("x", v => alert(v));
 emitter.emit("x", 42);
 
 // 98. Criar sistema de rotas simples
 const rotas = { "#home": "Home", "#sobre": "Sobre" };
-window.addEventListener("hashchange", () => console.log(rotas[location.hash] || "404"));
+window.addEventListener("hashchange", () => alert(rotas[location.hash] || "404"));
 
 // 99. Criar SPA básica
 if (document.body) {
@@ -581,5 +581,5 @@ async function clima(cidade) {
   const apiKey = "SEU_API_KEY";
   const resp = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}`);
   const data = await resp.json();
-  console.log(data);
+  alert(data);
 }
